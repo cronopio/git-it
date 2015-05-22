@@ -5,8 +5,9 @@
   "main": "index.js",
   "bin": "./git-it.js",
   "scripts": {
-    "build": "node guide/buildpages.js && node guide/buildpages.js zhtw",
+    "build": "node guide/buildpages.js && node guide/buildpages.js zhtw && node guide/buildpages.js es",
     "build-english": "node guide/buildpages.js",
+    "build-es": "node guide/buildpages.js es",
     "build-zhtw": "node guide/buildpages.js zhtw",
     "copy-guide": "cp -r ./guide ./.guide",
     "git-co": "git checkout gh-pages && git reset --hard origin/gh-pages",

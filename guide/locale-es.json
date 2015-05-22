@@ -1,0 +1,46 @@
+{
+  "n": {
+    ".gitignore": "archivo gitignore",
+    "repository": "repositorio",
+    "repositories": "repositorios",
+    "branch": "rama",
+    "branches": "ramas",
+    "fork": "fork",
+    "forks": "forks",
+    "request": "petición",
+    "pull request": "pull request",
+    "pull requests": "pull requests",
+    "commit": "commit",
+    "commits": "commits",
+    "upstream": "upstream",
+    "feature": "caracteristica",
+    "status": "estado",
+    "diff": "diferencia",
+    "readme": "leame",
+    "collaborator": "colaborador",
+    "collaborators": "colaboradores",
+    "remote": "remoto",
+    "remotes": "remotos",
+    "contributing": "contribuyendo",
+    "connections": "conecciones"
+  },
+  "v": {
+    "add": "agregar",
+    "fork": "fork",
+    "forked": "forked",
+    "clone": "clonar",
+    "push": "empujar",
+    "close": "cerrar",
+    "pull": "halar",
+    "commit": "commit",
+    "merge": "combinar",
+    "merged": "combinado",
+    "checkout": "checkout",
+    "stage": "stage"
+  },
+  "adj": {
+    "merged": "combinado",
+    "forked": "forked",
+    "remote": "remoto"
+  }
+}
