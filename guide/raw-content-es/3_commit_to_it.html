@@ -1,0 +1,58 @@
+      <div class="challenge">
+        <h2>El reto:</h2>
+        <p>Crear un archivo en su nuevo repositorio, agregue algo al 
+        archivo y haga commit de los cambios a Git.</p>
+      </div>
+
+      <h2>Paso: Cree un nuevo archivo</h2>
+
+      <p>Ahora que el repositorio ha iniciado, agregue archivos a el.</p>
+
+      <p>Abra un editor de texto. Ahora escriba un par de lineas de texto, 
+        tal vez diga hola, guarde el archivo como <code>readme.txt</code> en el directorio 'hola-mundo' creado en el reto anterior.</p>
+
+      <h2>Paso: Estado, Agregar y confirmar cambios</h2>
+      <p>Comprobamos el <strong>estado</strong> de su repositorio para averiguar si hay cambios.
+        Debajo en la terminal, usted debe estar dentro del directorio 'hola-mundo' que usted creo. Mira si hay cambios:</p>
+
+      <p><code>$ git status</code></p>
+
+      <p>Ahora <strong>agregue (add)</strong> el archivo que acaba de crear a los archivos
+        que usted le gustaria <strong>confirmar (commit)</strong> (guardar) el cambio</p>
+
+      <p><code>$ git add readme.txt</code></p>
+
+      <p>Finalmente, confirme haciendo <strong>commit</strong> esos cambios al historial del repositorio
+        con una descripcion corta sobre su actualizacion</p>
+      <p><code>$ git commit -m "&#60;Su mensaje del commit&#62;"</code></p>
+ 
+      <h2>Paso: Haga más cambios</h2>
+      <p>Ahora agregue mas lineas al archivo <code>readme.txt</code> y guarde.</p>
+
+      <p>En la linea de comandos, usted puede ver la diferencia (<strong>diff</strong>) entre el archivo 
+      y como estaba en su commit anterior. </p>
+
+      <p><code>$ git diff</code></p>
+
+      <p>Ahora con lo aprendido arriba, haga un commit con estos ultimos cambios.</p>
+
+      <div class="verify">
+        <h3>Verifique ejecutando </h3> <code>git-it verify </code><br>
+        <h3>Pase al siguiente reto ejecutando </h3> <code>git-it</code>
+      </div>
+
+      <div id="git-tips">
+        <h2>Ayuda!</h2>
+        <ul>
+          <li><strong>Verifique el estado del repositorio</strong></li>
+          <li><code>$ git status</code></li>
+          <li><strong>Mire los cambios de un archivo</strong></li>
+          <li><code>$ git diff</code></li>
+          <li><strong>Agregar los cambios de un archivo para confirmar (commit)</strong></li>
+          <li><code>$ git add &#60;FILENAME&#62;</code></li>
+          <li><strong>Agregar todos los archivos modificados</strong></li>
+          <li><code>$ git add .</code></li>
+          <li><strong>Para hacer commit (confirmar) de los cambios agregados con un mensaje corto describiendo los cambios</strong></li>
+          <li><code>$ git commit -m "&#60;Su mensaje&#62;"</code></li>
+        <ul>
+      </div>
