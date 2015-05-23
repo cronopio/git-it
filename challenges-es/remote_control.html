@@ -1,0 +1,187 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Git-it Guide</title>
+        <meta name="description" content="learn git and github">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../assets/imgs/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+      <!--[if lt IE 8]>
+          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+        <header class="site-header">
+  <div class="nav u-posFixed">
+    <div class="wrap-width u-textCenter">
+      <a href="githubbin.html"
+        <span class="u-floatLeft hand">☜</span>
+      </a>
+      <a class="filledblock" href="../index-es.html">Git-it</a>
+      <a href=""
+        <span class="u-floatRight hand">☞</span>
+      </a>
+    </div>
+  </div>
+  
+  <div class="wrapper">
+    <div class="u-floatLeft">
+      <span class="all-caps">CHALLENGE</span>
+      <h2 class="challenge-name">remote control</h2>
+    </div>
+    <div class="u-floatRight u-textRight">
+      <span class="all-caps">NUMBER</span>
+      <h2 class="challenge-name">5 / 11</h2>
+    </div>
+  </div>
+</header>
+      <div class="wrapper">
+
+            <div class="challenge">
+      <h2>El Reto:</h2>
+      <p>Conectar su repositorio local con el remoto y empujar (push) los cambios.</p>
+      </div>
+
+    <h2>Remoto</h2>
+
+    <p> Cuando usted pone algo en GitHub, esa copia vive en uno de los servidores de GitHub. Esto lo hace un repositorio <strong>remoto</strong>
+    porque este no est&#xE1; en su computador sino que est&#xE1; en un servidor &quot;remoto&quot;, en alg&#xFA;n otro lugar.
+    Haciendo <strong>push</strong> de sus cambios <strong>locales</strong> (en su computador), usted mantiene el remoto actualizado.</p>
+
+    <p>Los dem&#xE1;s pueden tener siempre lo &#xFA;ltimo de su proyecto haciendo <strong>pull</strong> de sus cambios desde el remoto (hacia sus propios computadores).
+    As&#xED; es como todos pueden trabajar juntos en un proyecto sin necesidad de acceder a su computador donde su copia local es almacenada.</p>
+
+    <img src="../assets/imgs/remotes.png" width="600">
+
+    <h2>Paso: Crear un repositorio remoto</h2>
+    <p>Usted debe sincronizar su versi&#xF3;n <strong>local</strong> con una almacenada en GitHub.com
+      llamada la versi&#xF3;n <strong>remota</strong>. Para esto, primero cree un repositorio vac&#xED;o en GitHub.com.</p>
+
+    <ul>
+      <li>Vaya a <a href="http://github.com/" target="_blank">github.com</a>, entre con su cuenta, y d&#xE9; click en el &apos;+&apos;
+        que se encuentra en la parte superior derecha para crear un nuevo repositorio.</li>
+      <li>Dele un nombre que coincida con su repositorio local, &apos;hola-mundo&apos;, y una descripci&#xF3;n breve.</li>
+      <li>H&#xE1;galo p&#xFA;blico.</li>
+      <li>No lo inicialice con un README porque usted ya tiene este archivo localmente, llamado &apos;readme.txt&apos;.</li>
+      <li>Deje el .gitignore y la licencia en &apos;none&apos;.</li>
+      <li>Click en crear repositorio!</li>
+    </ul>
+
+    <h2>Readmes, .gitignores y Licencias</h2>
+    <p>Estos son archivos comunes en los proyectos de c&#xF3;digo abierto.</p>
+
+    <p>Un <strong>readme</strong> explica qu&#xE9; es el proyecto, c&#xF3;mo usarlo, y generalmente c&#xF3;mo contribuir
+    (aunque algunas veces existe un archivo extra que es llamado, CONTRIBUTING.md, para esos detalles).</p>
+
+    <p>Un <strong>.gitignore</strong> es una lista de archivos que Git <em>no</em> debe seguir, por ejemplo, archivos con contrase&#xF1;as!</p>
+
+    <p>Un archivo <strong>license</strong> es un tipo de licencia que usted pone a su proyecto,
+    la informaci&#xF3;n a cerca de los tipos est&#xE1; aqu&#xED;:
+    <a href="http://www.choosealicense.com" target="_blank">choosealicense.com</a>.</p>
+    <p>Sin embargo, nosotros no necesitamos ninguna licencia para este ejemplo.</p>
+
+    <h2>Step: Connect your Local to your Remote</h2>
+    <p>Now you&apos;ve got an empty repository started on GitHub.com. At the
+    top you&apos;ll see &apos;Quick Setup&apos;, make sure the &apos;HTTP&apos; button is
+    selected and copy the address &#x2014; this is the location (address) of your
+    repository on GitHub&apos;s servers.</p>
+
+    <p>Back in your terminal, and inside of the &apos;hello-world&apos; folder that you
+    initialized as a Git repository in the earlier challenge, you
+    want to tell Git the location of the remote version on GitHub&apos;s servers. You can have multiple remotes so each requires a name. For your main one, this is commonly named <code>origin</code>.</p>
+
+    <code>$ git remote add origin &lt;URLFROMGITHUB&gt;</code>
+
+    <p>Your <strong>local</strong> repository now knows where your <strong>remote</strong> one named &apos;origin&apos; lives on GitHub&apos;s servers. Think of it as adding a name and address on speed dial &#x2014; now when you need to send something there, you can.</p>
+
+    <blockquote>
+    <p><strong>A note:</strong></p>
+    <p>If you have <strong>GitHub for Windows</strong> on your computer, a remote
+      named &apos;origin&apos; is automatically created. In that case, you&apos;ll
+      just need to tell it what URL to associate with origin. Use this
+      command instead of the &apos;add&apos; one above:</p>
+
+    <code>$ git remote set-url origin &lt;URLFROMGITHUB&gt;</code>
+    </blockquote>
+
+    <h2>Step: Push Work to your Remote</h2>
+    <p>Next you want to <strong>push</strong> (send) everything you&apos;ve done locally
+      to GitHub. Ideally you want to stay in sync, meaning your local and remote versions match.</p>
+
+    <p>Git has a branching system so that you can work on different
+      parts of a project at different times. We&apos;ll learn more about that later, but by default the first
+      branch is named &apos;master&apos;. When you push (and later pull) from
+      a project, you tell Git the <strong>branch name</strong> you want and the
+      name of the <strong>remote</strong> that it lives on.
+
+    </p><p>In this case, we&apos;ll send our branch named &apos;master&apos; to our remote on GitHub named &apos;origin&apos;. </p>
+
+    <code>$ git push origin master</code>
+
+    <p>Now go to GitHub and refresh the page of your repository. WOAH!
+      Everything is the same locally and remotely. Congrats on your
+      first public repository!</p>
+
+      <div class="verify">
+        <h3>Verify with </h3> <code>git-it verify </code><br>
+        <h3>Go to the next challenge </h3> <code>git-it</code>
+      </div>
+
+    <div id="git-tips">
+      <h2>Tips</h2>
+      <ul>
+        <li><strong>Add remote connections</strong></li>
+        <code>$ git remote add &lt;REMOTENAME&gt; &lt;URL&gt;</code>
+        <li><strong>Set a URL to a remote</strong></li>
+        <code>$ git remote set-url &lt;REMOTENAME&gt; &lt;URL&gt;</code>
+        <li><strong>Pull in changes</strong></li>
+        <code>$ git pull &lt;REMOTENAME&gt; &lt;BRANCHNAME&gt;</code>
+        <li><strong>View remote connections</strong></li>
+        <code>$ git remote -v</code>
+        <li><strong>Push changes</strong></li>
+        <code>$ git push &lt;REMOTENAME&gt; &lt;BRANCH&gt;</code>
+      </ul>
+    </div>
+
+
+        <div class="prenext">
+  <div class="u-floatLeft">
+    <a href="githubbin.html" class="u-inline-block all-caps">GitHubbin
+    <div>⤶ </div>
+    </a>
+  </div>
+  <div class="u-textRight u-floatRight">
+    <a href="" class="u-inlineBlock all-caps">
+    <div>⤷</div>
+    </a>
+  </div>
+</div>
+<footer>
+  <ul>
+    <li class="all-caps"><a href="../index-es.html"><strong>Git-it Challenges</strong></a></li>
+    <li class="all-caps"><a href="../about.html">About</a></li>
+    <li class="all-caps"><a href="../dictionary.html">Dictionary</a></li>
+    <li class="all-caps"><a href="../resources.html">Resources</a></li>
+    <li class="all-caps">
+      <a href="http://github.com/jlord/git-it/issues/new" target="_blank">Open an Issue</a>
+    </li>
+  </ul>
+</footer>
+
+      </div>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-52690821-1', 'auto');
+        ga('send', 'pageview');
+
+      </script>
+    </body>
+</html>
