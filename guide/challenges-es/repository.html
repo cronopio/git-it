@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Git-it Guide</title>
+        <meta name="description" content="learn git and github">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../assets/imgs/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+      <!--[if lt IE 8]>
+          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+        <header class="site-header">
+  <div class="nav u-posFixed">
+    <div class="wrap-width u-textCenter">
+      <a href="get_git.html"
+        <span class="u-floatLeft hand">☜</span>
+      </a>
+      <a class="filledblock" href="../index-es.html">Git-it</a>
+      <a href=""
+        <span class="u-floatRight hand">☞</span>
+      </a>
+    </div>
+  </div>
+  
+  <div class="wrapper">
+    <div class="u-floatLeft">
+      <span class="all-caps">CHALLENGE</span>
+      <h2 class="challenge-name">repository</h2>
+    </div>
+    <div class="u-floatRight u-textRight">
+      <span class="all-caps">NUMBER</span>
+      <h2 class="challenge-name">2 / 11</h2>
+    </div>
+  </div>
+</header>
+      <div class="wrapper">
+
+            <div class="challenge">
+      <h2>El Reto:</h2>
+      <p>Crear un nuevo repositorio en su computador</p>
+    </div>
+
+    <h2>Repositorios</h2>
+
+    <p>Un <strong>Repositorio</strong> es b&#xE1;sicamente un proyecto. Usted puede imaginarlo como
+      una carpeta de proyecto con todos los archivos relacionados dentro de ella.  De hecho, esto es
+      lo que ver&#xE1; en su computador de todas formas.</p>
+
+    <img src="../assets/imgs/repos.png" width="600">
+
+    <p>Usted le dice a Git lo que es su proyecto y Git empezar&#xE1; el seguimiento de todos los cambios en esa carpeta.
+      Los archivos agregados, eliminados o incluso el cambio a una simple letra en un archivo. -- Todo esto es
+      seguido por Git, adem&#xE1;s de esto les agrega una marca de tiempo. Esto es un <strong>control de versiones</strong>.</p>
+
+    <h2>Usando la terminal</h2>
+    <p><strong>Terminal</strong> (or Bash) es una manera de usar su computador usando comandos. Usted puede renombrar archivos, abrir archivos,
+    crear nuevas carpetas y moverse entre directorios (carpetas), todo escribiendo comandos. Usted puede incluso ejecutar un editor de texto (como <a href="http://en.wikipedia.org/wiki/Vim_(text_editor)" target="_blank"> Vim</a>) en su terminal y nunca tiene que salir de ella!</p>
+
+    <p>Adem&#xE1;s de navegar en su computador, usted tambien puede usar programas en la terminal los cuales tengan una
+    <strong>Interfaz de l&#xED;nea de comandos [command-line interface (CLI)]</strong>, esto significa que ellos pueden ser ejecutados con comandos en la terminal.
+    Git-it es uno de ellos, usted esta usando la terminar para ejecutarlo!. Git es otro ejemplo. Usted puede acceder y controlar Git a trav&#xE9;s de comandos
+    en la terminal, tal como usted lo har&#xE1; prontamente!</p>
+
+    <p>En Git-it usted aprender&#xE1; algunas acciones b&#xE1;sicas de la l&#xED;nea de comandos las cuales ser&#xE1;n descritas en los siguientes pasos.</p>
+
+    <h2>Primer paso: Crear un repositorio</h2>
+    <p>Usted debe crear una nueva carpeta e inicializarla como un repositorio de Git.</p>
+
+    <p>Para hacer esto m&#xE1;s f&#xE1;cil, nombre su carpeta igual que el proyecto, qu&#xE9; tal &apos;hola-mundo&apos;.</p>
+
+    <p>Usted puede escribir estos comandos uno a la vez en su terminal.</p>
+
+    <p>Para crear una nueva carpeta:</p>
+    <code>$ mkdir hola-mundo</code>
+
+    <p>Para entrar a esa carpeta:</p>
+    <code>$ cd hola-mundo</code>
+
+    <p>Para crear una nueva instancia de git para el proyecto:</p>
+    <code>$ git init</code>
+
+    <p>Eso es todo! Esto va a retornarle una nueva l&#xED;nea. Si usted quiere asegurarse nuevamente de que es un repositorio de git, escriba
+    <code>git status</code> y si esto no retorna &apos;fatal: Not a git repository...&apos;, usted es oro!</p>
+
+    <div class="verify">
+      <h3>Verifique ejecutando </h3> <code>git-it verify </code><br>
+      <h3>Pase al siguiente reto ejecutando </h3> <code>git-it</code>
+    </div>
+
+    <div id="git-tips">
+      <h2>Ayuda!</h2>
+      <ul>
+        <li><strong>Cree una nueva carpeta (directorio)</strong></li>
+        <code>$ mkdir &lt;FOLDERNAME&gt;</code>
+        <li><strong>Entrar a una carpeta (cambiar directorio)</strong></li>
+        <code>$ cd &lt;FOLDERNAME&gt;</code>
+        <li><strong>Listar todos los elementos en una carpeta</strong></li>
+        <code>$ ls </code>
+        <li><strong>Inicializar git en una carpeta</strong></li>
+        <code>$ git init</code>
+      </ul>
+    </div>
+
+
+        <div class="prenext">
+  <div class="u-floatLeft">
+    <a href="get_git.html" class="u-inline-block all-caps">get git
+    <div>⤶ </div>
+    </a>
+  </div>
+  <div class="u-textRight u-floatRight">
+    <a href="" class="u-inlineBlock all-caps">
+    <div>⤷</div>
+    </a>
+  </div>
+</div>
+<footer>
+  <ul>
+    <li class="all-caps"><a href="../index-es.html"><strong>Git-it Challenges</strong></a></li>
+    <li class="all-caps"><a href="../about.html">About</a></li>
+    <li class="all-caps"><a href="../dictionary.html">Dictionary</a></li>
+    <li class="all-caps"><a href="../resources.html">Resources</a></li>
+    <li class="all-caps">
+      <a href="http://github.com/jlord/git-it/issues/new" target="_blank">Open an Issue</a>
+    </li>
+  </ul>
+</footer>
+
+      </div>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-52690821-1', 'auto');
+        ga('send', 'pageview');
+
+      </script>
+    </body>
+</html>
